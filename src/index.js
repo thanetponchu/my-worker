@@ -12,6 +12,7 @@ export default {
 	async fetch(request, env, ctx) {
 	  return new Response(JSON.stringify({
 		message: "Hello from Cloudflare Worker API!",
+		
 		time: new Date().toISOString(),
 	  }), {
 		headers: { 'Content-Type': 'application/json' }
